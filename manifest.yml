@@ -5,3 +5,5 @@ applications:
   env:
     VERSION: 0.0.1
     GOPACKAGENAME: github.com/swisscom/cf-sample-app-go-dep
+  routes:
+    - route: my-app-dep.scapp.io
