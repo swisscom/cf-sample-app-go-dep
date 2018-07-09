@@ -1,4 +1,4 @@
-.PHONY: all get clean build
+.PHONY: all get clean build push
 
 GO ?= go
 
@@ -11,4 +11,7 @@ get:
 	dep ensure
 
 clean:
-	@rm -rf cf-sample-app-go-dep vendor
+	@rm -rf cf-sample-app-go-dep
+
+push: clean
+	cf push
